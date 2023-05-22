@@ -33,7 +33,7 @@ namespace DeveloperApp
             }
             else
             {
-                return -1;  // This programmer is considered "less than" the other developer
+                return -1;  
             }
         }
     }
@@ -61,7 +61,7 @@ namespace DeveloperApp
             }
             else
             {
-                return 1;  // This builder is considered "greater than" the other developer
+                return 1;  
             }
         }
     }
@@ -70,7 +70,7 @@ namespace DeveloperApp
     {
         static void Main(string[] args)
         {
-            List<IDeveloper> developers = new List<IDeveloper>();  // Create a list of IDeveloper
+            List<IDeveloper> developers = new List<IDeveloper>();  
 
             Programmer programmer1 = new Programmer { Tool = "IDE", Language = "C#" };
             Programmer programmer2 = new Programmer { Tool = "Text Editor", Language = "Python" };
@@ -88,7 +88,7 @@ namespace DeveloperApp
                 developer.Destroy();
             }
 
-            developers.Sort();  // Sort the developers based on the implemented comparison logic
+            developers.Sort();  
 
             Console.WriteLine("\nSorted list of developers:");
 
